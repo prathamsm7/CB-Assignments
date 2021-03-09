@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <style></style>
+  <body>
+    <div>
+      <form method="GET" action="">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label>FirstName : </label>
+          <input
+            type="text"
+            id="fName"
+            name="firstname"
+            placeholder="Enter your First Name"
+            maxlength="20"
+            required
+          />
+          <br />
+
+          <label>LastName : </label>
+          <input
+            type="text"
+            id="lName"
+            name="lastname"
+            placeholder="Enter your last Name"
+            maxlength="20"
+            required
+          /><br />
+
+          <label>Email : </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+          <br />
+
+          <label>Birthdate : </label>
+          <input type="date" id="bdate" />
+          <br />
+
+          <label>Password : </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your Password"
+            maxlength="8"
+            required
+          /><br />
+
+          <label>Gender : </label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+          <br />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Address</legend>
+          <label for="city"
+            >City
+            <select id="City" name="City">
+              <option value="" selected="selected">Select One</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select> </label
+          ><br />
+
+          <label for="State"
+            >State
+            <select id="State" name="State">
+              <option value="" selected="selected">Select One</option>
+              <option value="X">X</option>
+              <option value="Y">Y</option>
+              <option value="Z">Z</option>
+            </select> </label
+          ><br />
+
+          <label for="Country"
+            >Country
+            <select id="Country" name="Country">
+              <option value="" selected="selected">Select One</option>
+              <option value="India">India</option>
+              <option value="England">England</option>
+              <option value="Australia">Australia</option>
+            </select> </label
+          ><br />
+
+          <label for="pin">Pin Code</label>
+          <input
+            type="text"
+            id="pincode"
+            name="pincode"
+            placeholder="Enter valid pin code"
+            maxlength="6"
+          />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>Educational Info.</legend>
+          <label for="SSC">SSC Marksheet</label>
+          <input type="file" />
+          <label for="HSC">HSC Marksheet</label>
+          <input type="file" />
+          <label for="Degree">Graduation Marksheet</label>
+          <input type="file" />
+        </fieldset>
+        <br />
+
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
