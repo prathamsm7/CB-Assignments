@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #14213d;
+}
+
+/* .container {
+  height: 100%;
+  width: 100vh;
+  position: relative;
+  border: 2px solid white;
+} */
+
+button {
+  background-color: #fad2e1;
+  display: block;
+  margin: 50vh auto;
+  width: 150px;
+  padding: 10px 20px;
+  border: 2px solid #e54f6d;
+  border-radius: 10px;
+  font-family: "Akaya Telivigala", cursive;
+  font-weight: bold;
+  font-size: larger;
+  color: #ff0054;
+}
+
+button:hover {
+  background-color: #a5c4d4;
+  color: #9237ce;
+  border: 2px solid #b8eb01;
+  transform: scale(1);
+  box-shadow: #e9eb82 0px 8px 5px -3px;
+}
