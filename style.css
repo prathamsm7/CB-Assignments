@@ -1,0 +1,28 @@
+.container {
+  background-color: #86ecdb;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  color: rgb(255, 0, 157);
+  font-family: "Akaya Kanadaka", cursive;
+  padding: 1rem;
+}
+
+hr {
+  height: 5px;
+  background-color: #000;
+  border: none;
+  color: brown;
+}
+
+.card {
+  margin: 0.5rem;
+}
+
+a {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
