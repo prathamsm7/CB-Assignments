@@ -1,0 +1,186 @@
+body {
+  background-color: #254e70;
+  /* opacity: 0.9; */
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.container {
+  background-color: rgb(174, 174, 211);
+  height: 1000%;
+  width: 80%;
+  margin: 3% auto;
+  border: 2px solid rgb(255, 3, 3);
+  border-radius: 120px 90px 60px 30px/30px 60px 90px 120px;
+  padding: 2rem;
+  justify-self: center;
+  align-items: center;
+  box-shadow: rgba(18, 9, 143, 0.712) 0px 10px 29px 0px;
+}
+
+.navbar {
+  background-color: #5ca4b8;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 0 2rem 0 2rem;
+  text-shadow: 0px 5px 10px #ec1ea8;
+}
+
+.navbar-brand {
+  color: #350f72;
+  font-weight: bold;
+  font-family: "Merienda", cursive;
+  font-size: 2rem;
+  text-shadow: 0px 5px 10px #a1e92d;
+}
+
+.navbar a {
+  color: #011936;
+  font-weight: bold;
+}
+.navbar a:hover {
+  transform: scale(1.05);
+  text-shadow: 0px 5px 10px #ff0202;
+  color: #c0fdff;
+}
+
+.navbar button {
+  border: 2px solid rgb(0, 0, 0);
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* .custom-toggler .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} */
+#Profile,
+#About,
+#Projects,
+#Languages,
+#Contacts {
+  border-radius: 30px/90px;
+  background-color: #c48678;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.Picture,
+.Details {
+  /* border: 2px solid black; */
+  padding: 5px;
+}
+
+.Picture img {
+  border-radius: 60%;
+  width: 100%;
+  height: 100%;
+}
+
+.Details h1 {
+  color: #004981;
+  font-family: "Charm", cursive;
+  text-decoration: underline;
+}
+
+.Details h6 {
+  color: #e4e4e4;
+}
+.Details strong {
+  color: #ffffff;
+}
+
+.Details span {
+  background-color: #75d4ee;
+  font-weight: 500;
+  color: #720846;
+}
+
+#About p {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #3c096c;
+}
+
+.container .card {
+  background-color: #e6e2bb;
+  box-shadow: rgba(10, 10, 10, 0.712) 0px 10px 29px 0px;
+  font-family: "Patrick Hand SC", cursive;
+  font-weight: 900;
+  color: #ab3666;
+}
+.card img {
+  border-radius: 2.5rem 2.5rem 0 0;
+  width: 100%;
+  height: 20rem;
+}
+
+.card h5 {
+  font-size: larger;
+  font-weight: bold;
+  color: #da1bb1;
+}
+.container .card:hover {
+  transform: scale(1.01);
+  transition-delay: 100ms;
+  box-shadow: rgba(217, 240, 11, 0.712) 0px 10px 29px 0px;
+}
+
+.container h2 {
+  font-family: "Ravi Prakash", cursive;
+  color: #9d0208;
+}
+
+.progress {
+  margin-top: 1rem;
+  height: 1.7rem;
+  border: 2px solid #98f7fa;
+}
+
+.progress h6 {
+  text-align: left;
+  padding: 8px;
+  margin-top: 5px;
+}
+.progress:nth-of-type(1) .progress-bar {
+  background-color: #ff5e00;
+  color: rgb(187, 255, 0);
+}
+
+.progress:nth-of-type(2) .progress-bar {
+  background-color: #0873ee;
+  color: #f8f9fa;
+}
+
+.progress:nth-of-type(3) .progress-bar {
+  background-color: #6808a0;
+  color: #00ffbb;
+}
+
+.progress:nth-of-type(4) .progress-bar {
+  background-color: #e7c632;
+  color: rgb(255, 0, 136);
+}
+
+#Contacts div i {
+  font-size: 1.5rem;
+  color: #023e8a;
+  padding-right: 0.2rem;
+}
+
+#Contacts div {
+  font-size: 1rem;
+  color: #03045e;
+  margin-top: 0.5rem;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+#Contacts div a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #03045e;
+}

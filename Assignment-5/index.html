@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Nothing+You+Could+Do&family=Sofia&display=swap&family=Charm:wght@700&family=Ravi+Prakash&family=Patrick+Hand&family=Patrick+Hand+SC"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>My PortFolio</title>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <div class="container">
+      <nav class="navbar navbar-expand-md">
+        <!-- Brand -->
+        <span class="navbar-brand" href="#">Portfolio</span>
+
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#Profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Languages">Languages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Profile Section -->
+    <div class="container">
+      <div class="row justify-content-center" id="Profile">
+        <div class="col-md-4 justify-content-sm-center Picture">
+          <img
+            src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            alt=""
+          />
+        </div>
+        <div class="col-md-7 Details pt-3 ps-md-5 text-md-start text-center">
+          <h1 class="pt-2">Alex Johnson</h1>
+          <h6 class="pt-2">I'am a <strong>FullStack Web Developer </strong></h6>
+          <!-- <h6 class="pt-2">I'am a <strong>FullStack Web Developer </strong></h6> -->
+          <span class="btn btn-lg btn-outline-dark mt-2 p-1"
+            ><i class="fa fa-briefcase" aria-hidden="true"></i>View
+            Portfolio</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="container">
+      <div class="row justify-content-sm-center" id="About">
+        <div class="col-md-12 ps-md-5 ps-sm-2">
+          <h2>About</h2>
+          <p class="text-wrap">
+            I am an fullstack developer seeking a job in field of Web
+            Development, where I can apply my knowledge and skills for
+            continuous improvmment. I've always been drawn to
+            development,studying and teaching . I enjoy each aspects and love
+            building complex site from start to finish
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="container">
+      <div class="row justify-content-sm-around" id="Projects">
+        <div class="col-md-12 ps-md-5 ps-sm-0">
+          <h2
+            data-toggle="collapse"
+            data-target="#demo"
+            role="button"
+            title="Click Me To See My Projects"
+          >
+            My Projects
+          </h2>
+          <div id="demo" class="row collapse">
+            <div class="card col-sm-12 col-md-5 m-md-2 mt-md-4 mb-2 pt-2">
+              <img
+                class="card-img-top bor"
+                src="https://images.unsplash.com/photo-1611262588024-d12430b98920?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8aW5zdGFncmFtfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Instagram Clone</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Similique blanditiis illo impedit itaque consectetur
+                  distinctio voluptate culpa molestias labore perferendis,
+                  assumenda cumque dignissimos in dicta fugiat aperiam!
+                  Architecto, temporibus nam!
+                </p>
+              </div>
+            </div>
+            <div class="card col-sm-12 col-md-5 m-md-2 mt-md-4 mb-2 pt-2">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=967&q=80"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Netflix Clone</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Similique blanditiis illo impedit itaque consectetur
+                  distinctio voluptate culpa molestias labore perferendis,
+                  assumenda cumque dignissimos in dicta fugiat aperiam!
+                  Architecto, temporibus nam!
+                </p>
+              </div>
+            </div>
+            <div class="card col-sm-12 col-md-5 m-md-2 mt-md-4 mb-2 pt-2">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8&auto=format&fit=crop&w=600&q=60"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Spotify Clone</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Similique blanditiis illo impedit itaque consectetur
+                  distinctio voluptate culpa molestias labore perferendis,
+                  assumenda cumque dignissimos in dicta fugiat aperiam!
+                  Architecto, temporibus nam!
+                </p>
+              </div>
+            </div>
+            <div class="card col-sm-12 col-md-5 m-md-2 mt-md-4 mb-2 pt-2">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=967&q=80"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Twitter Clone</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Similique blanditiis illo impedit itaque consectetur
+                  distinctio voluptate culpa molestias labore perferendis,
+                  assumenda cumque dignissimos in dicta fugiat aperiam!
+                  Architecto, temporibus nam!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Languages Section -->
+    <div class="container">
+      <div class="row" id="Languages">
+        <div class="col-md-12 ps-md-5 ps-sm-2" id="bar">
+          <h2>Languages</h2>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 90%"
+            >
+              <h6>HTML 90%</h6>
+            </div>
+          </div>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              aria-valuenow="80"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 80%"
+            >
+              <h6>CSS 80%</h6>
+            </div>
+          </div>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 85%"
+            >
+              <h6>Bootstrap 85%</h6>
+            </div>
+          </div>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              aria-valuenow="60"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 60%"
+            >
+              <h6 class=" ">Javascript 60%</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container">
+      <div class="row justify-content-sm-center" id="Contacts">
+        <h2 class="ps-md-5 ps-sm-2">Contacts</h2>
+        <div class="col-md-5 col-sm-6">
+          <i class="fas fa-mobile-alt"></i>123-4567890
+        </div>
+        <div class="col-md-5 col-sm-6">
+          <i class="far fa-envelope"></i>example@email.com
+        </div>
+        <div class="col-md-5 col-sm-6">
+          <i class="fab fa-github-square"></i><a href="#">abc.github.io</a>
+        </div>
+        <div class="col-md-5 col-sm-6">
+          <i class="fab fa-linkedin"></i><a href="#">abc@linkedin.com</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
