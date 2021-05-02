@@ -1,0 +1,84 @@
+body {
+  background-color: darkcyan;
+}
+
+/* Navbar Style */
+.navbar-brand {
+  font-family: "Satisfy", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-left: 1rem;
+  color: #c1d3fe;
+}
+
+.nav-item a {
+  color: #f8f9fa;
+  font-weight: bold;
+}
+
+.navbar-nav {
+}
+
+.custom-toggler.navbar-toggler {
+  border: 2px solid #bcf33c;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* index page styles */
+.card {
+  background-color: #220901;
+  border: 2px solid #e4c1f9;
+}
+
+.card-title {
+  color: #ffc4d6;
+}
+
+.card-text {
+  color: #a1ff0a;
+  font-size: 1.2rem;
+}
+
+.author {
+  color: #edf2fb;
+}
+
+/* Show Page Styles */
+.show h1 {
+  color: #ffc4d6;
+}
+
+.show p {
+  color: #a1ff0a;
+}
+
+.show .muted {
+  color: #c0fdff;
+}
+
+.show h1,
+p,
+.muted {
+  padding: 1rem;
+}
+
+/* Comments Style */
+.cmt .card {
+  background-color: #ffffff;
+  border: 2px solid #6930c3;
+}
+
+.cmt .card-header {
+  color: #f72585;
+  font-size: 1.2rem;
+}
+
+.cmt .card-bdy {
+  color: #b5179e;
+  font-size: 1.5rem;
+  font-family: "Dancing Script", cursive;
+  padding: 1rem;
+}

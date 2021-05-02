@@ -1,0 +1,77 @@
+<%- include("../partials/header") %> <%- include("../partials/navbar") %>
+
+<div class="container-fluid mt-3 mb-4">
+  <div class="col-md-10 m-auto">
+    <div class="card mb-2 show">
+      <img
+        src="<%= blog.img %> "
+        alt=""
+        width="90%"
+        height="600px"
+        class="m-auto pt-3 pb-1"
+      />
+      <div class="card-body">
+        <h1><%= blog.title %></h1>
+        <p><%= blog.body %></p>
+        <h4 class="text-end muted">- <%= blog.author%></h4>
+        <div class="d-grid gap-2 col-md-10 col-sm-8 mx-auto">
+          <a
+            href="/blogs/<%= blog._id %>/edit"
+            class="btn btn-outline-warning m-4"
+            >Edit</a
+          >
+        </div>
+        <form
+          action="/blogs/<%=blog._id%>?_method=DELETE"
+          method="POST"
+          class="mt-2"
+        >
+          <div class="d-grid gap-2 col-md-10 col-sm-8 mx-auto">
+            <button class="btn btn-outline-danger">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Comment Section -->
+    <div class="m-auto">
+      <div class="row">
+        <div class="col-md-6 pt-4">
+          <h2>Leave a comment</h2>
+          <form
+            class="needs-validation"
+            action="/blogs/<%= blog._id %>/comment"
+            method="POST"
+            novalidate
+          >
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                rows="6"
+                name="text"
+                placeholder="Write Your Comment Here...."
+                required
+              ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Post Comment</button>
+          </form>
+        </div>
+
+        <!-- All Comments -->
+        <div class="col-md-6 pt-4 cmt">
+          <h2>Comments</h2>
+          <% for(let comment of blog.comments) {%>
+          <div class="card mt-2">
+            <h1 class="card-header">User</h1>
+            <div class="card-bdy">
+              <h4><%=comment.text%></h4>
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("../partials/footer") %>

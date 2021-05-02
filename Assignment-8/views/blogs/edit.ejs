@@ -1,0 +1,69 @@
+<%- include("../partials/header") %> <%- include("../partials/navbar") %>
+
+<div class="container mt-3 mb-4 bg-info p-3">
+  <h2 class="text-center pb-2">Edit the Post</h2>
+  <form
+    class="col-md-10 m-auto needs-validation"
+    novalidate
+    method="POST"
+    action="/blogs/<%= blog.id %>?_method=PATCH"
+  >
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label"
+        >Blog Title</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="Some text goes here ..."
+        name="blog[title]"
+        value="<%= blog.title %> "
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Image</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleFormControlInput2"
+        placeholder="Image URL goes here ..."
+        name="blog[img]"
+        value="<%= blog.img %> "
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label"
+        >Blog Author</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="exampleFormControlInput3"
+        placeholder="Author name goes here ..."
+        name="blog[author]"
+        value="<%= blog.author %> "
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Example textarea</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="10"
+        name="blog[body]"
+        required
+      >
+<%= blog.body %></textarea
+      >
+    </div>
+    <button type="submit" class="btn btn-warning">Update !</button>
+  </form>
+</div>
+
+<%- include("../partials/footer") %>
